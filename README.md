@@ -1,5 +1,5 @@
 # Instructions
-The file 'Proposal.Rmd' is where we will write the project
+The file 'Proposal.Rmd' is where we will write the project. See the pdf for the latest version.
 
 # Citing
 To cite, I suggest we use the bibtex citation. It's pretty neat because it automatically renders the references in the end of the document. All we need to do is write "@lastnameYYYY" in the text where we want to reference someone, (change "lastname" to the last name of the author, and "YYYY" to the year the article/book was published.) We connect these commands to commands in the .bib file "bibliography.bib".
