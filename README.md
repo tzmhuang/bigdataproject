@@ -12,13 +12,12 @@ So once you've found an article you want to cite. First follow these steps, and 
 Go to [lib.hku.hk](http://lib.hku.hk) and search for the article/book. Let's say I want to cite Hadley Wickham's book on ggplot2. Find it and press the Citation mark.
 
 
-
-![](img/1.png)
+<img src="img/1.png" height="600" width="600">
 <br><br><br>
 Select "EXPORT BIBTEX" and then "DOWNLOAD"
 <br><br>
 
-![](img/2.png)
+<img src="img/2.png" height="600" width="600">
 <br><br>
 
 You will see the following.
@@ -34,4 +33,8 @@ The only change you should make is the default command "WickhamHadley2016gEGf". 
 ![](img/4.png)
 <br><br>
 
-Save, and once you've saved you can write "@wickham2016" in the .Rmd file. I've already included this and 3 other books and articles (as you can see above). 
+Save, and once you've saved you can write "@wickham2016" in the report file. The text will look like "Wickham (2016)" and the reference will be included automatically. See example below.
+
+<br><br>
+![](img/5.png)
+<br><br>
