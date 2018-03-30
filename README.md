@@ -17,7 +17,7 @@ Go to [lib.hku.hk](http://lib.hku.hk) and search for the article/book. Let's say
 Select "EXPORT BIBTEX" and then "DOWNLOAD"
 <br><br>
 
-<img src="img/2.png" height="300" width="440">
+<img src="img/2.png" height="300" width="450">
 <br><br>
 
 You will see the following.
