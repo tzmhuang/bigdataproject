@@ -12,12 +12,12 @@ So once you've found an article you want to cite. First follow these steps, and 
 Go to [lib.hku.hk](http://lib.hku.hk) and search for the article/book. Let's say I want to cite Hadley Wickham's book on ggplot2. Find it and press the Citation mark.
 
 
-<img src="img/1.png" height="250" width="400">
+<img src="img/1.png" height="300" width="440">
 <br><br><br>
 Select "EXPORT BIBTEX" and then "DOWNLOAD"
 <br><br>
 
-<img src="img/2.png" height="600" width="600">
+<img src="img/2.png" height="300" width="440">
 <br><br>
 
 You will see the following.
