@@ -6,7 +6,7 @@ To cite, I suggest we use the bibtex citation. It's pretty neat because it autom
 
 So once you've found an article you want to cite. First follow these steps, and then all you need to do is write "@lastnameYYYY" in the text in the proposal, and the article/book will automatically be included in the references.
 
- 
+ asdf asdf
 
 #### Example
 Go to [lib.hku.hk](http://lib.hku.hk) and search for the article/book. Let's say I want to cite Hadley Wickham's book on ggplot2. Find it and press the Citation mark.
