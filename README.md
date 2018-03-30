@@ -25,7 +25,7 @@ You will see the following.
 ![](img/3.png)
 <br><br>
 
-Copy the whole text and paste it in the .bib file. The first line of text right after "@book{" is just the command we use in the text when citing. To open the .bib file I use TeXShop but you can use whatever you want. You can it with brackets or any other text editor i think. (Edit: the easiest way is to just edit the bibliography.bib file here on github. Find on bibliography.bib, then click on the little pen in the top right corner, and then add it)
+Copy the whole text and paste it in the .bib file. The first line of text right **after** "@book{" is just the command we use in the text when citing. To open the .bib file I use TeXShop locally but the easiest way is to just edit the bibliography.bib file here on github. Find on bibliography.bib, then click on the little pen in the top right corner, and then add it.
 
 The only change you should make is the default command "WickhamHadley2016gEGf". This is 100 % arbitrary but I suggest we use "lastnameYYYY" because it's easy to remember.
 
