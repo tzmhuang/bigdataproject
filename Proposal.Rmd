@@ -17,6 +17,11 @@ output:
   html_notebook: default
 ---
 
+```{r, echo=FALSE}
+options(citr.use_betterbiblatex = FALSE)
+```
+
+
 # Objectives
 
 See @lortie2017 or perhaps @ihaka1996
@@ -31,6 +36,6 @@ asdf
 
 # Study Plan
 
-@wickham2016
+asdf
 
 # Referenecs
