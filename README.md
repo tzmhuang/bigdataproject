@@ -13,17 +13,17 @@ Go to [lib.hku.hk](http://lib.hku.hk) and search for the article/book. Let's say
 
 
 
-![](img/1.png){width=50%}
+![](img/1.png)
 <br><br><br>
 Select "EXPORT BIBTEX" and then "DOWNLOAD"
 <br><br>
 
-![](img/2.png){width=50%}
+![](img/2.png)
 <br><br>
 
 You will see the following.
 <br><br>
-![](img/3.png){width=100%}
+![](img/3.png)
 <br><br>
 
 Copy the whole text and paste it in the .bib file. The first line of text right after "@book{" is just the command we use in the text when citing. To open the .bib file I use TeXShop but you can use whatever you want. You can it with brackets or any other text editor i think.
@@ -31,7 +31,7 @@ Copy the whole text and paste it in the .bib file. The first line of text right 
 The only change you should make is the default command "WickhamHadley2016gEGf". This is 100 % arbitrary but I suggest we use "lastnameYYYY" because it's easy to remember.
 
 <br><br>
-![](img/4.png){width=100%}
+![](img/4.png v=4&s=200)
 <br><br>
 
 Save, and once you've saved you can write "@wickham2016" in the .Rmd file. I've already included this and 3 other books and articles (as you can see above). 
