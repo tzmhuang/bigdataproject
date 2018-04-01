@@ -23,7 +23,7 @@ After downloading the data, put the data in two fodlers
 
 -   the *monthly performance data* in another folder called `monthlyperformace` (these are the large files, `historical_data1_time_QnYYYY.txt`)
 
-##### open the sparklyr connection
+##### Open the sparklyr connection
 
 ``` r
 library(sparklyr)
@@ -64,7 +64,7 @@ system.time(
 )
 ```
 
-##### Next, rename the columns
+##### Rename the columns
 
 ``` r
 # origin names
