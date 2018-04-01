@@ -1,2 +1,5 @@
 #
 .Rproj.user
+
+# history files
+.Rhistory
