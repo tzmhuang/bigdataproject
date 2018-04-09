@@ -24,13 +24,15 @@ options(citr.use_betterbiblatex = FALSE)
 
 # Objectives
 
-See @lortie2017 or perhaps @ihaka1996
 
 # Data
 
-## Subsection: Description
 
-## Subsection: Preparation
+## Description
+Description of the data
+
+## Preparation
+Preparation. What changes? Recoding i.e. mutate, filter, remove NA etc.
 
 # Study Plan
 
