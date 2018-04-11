@@ -108,12 +108,13 @@ In the monthly performance dataset, there are a total of 24 variables. The table
 |23    |Modification Cost|The cumulative modification cost amount calculated when Freddie Mac determines such mortgage loan has experienced a rate modification event. |Numeric|
 
 
-### Quality of the data: 
+### Quality of the data
+
 Many empty or N/A values in the monthly performance data set.<br/>
 The Dataset is sparse in nature. 15 out of 23 total columns are mostly empty or not avalible. Some columns such as Repurchase Flag, Modification Flag, Zero Balance Code, and Zero Balance Effective Data are left empty on purpose, as these data are only avalible in the loan termination months. Also columns like Legal Costs, Tax and Insurance, Miscellaneous Expenses are left empty as the data are only applicable when loan ends with foreclosure or REO Disposition. However other columns such as Actual Loss Calculation are left empty without expanation. Due to the lack of data, there will be certain limitations in future analysis. 
 
-### Quality of the data
 
+## Preparation
 Many of the variables in the data are coded in ways that may not be optimal for further analysis. We will therefore  recode many of the variable into forms that are easier to handle. Below are a few examples that represents most of the variable recodings done. 
 
 
@@ -135,18 +136,6 @@ Many of the variables in the data are coded in ways that may not be optimal for 
 
 
 Many binary variables are coded as 'YES' and 'NO' and spaces for unknown, while in R those variables should be recoded into numerical `1` for 'YES', `0` for 'NO' and `NA` for the missing values. The credit score variable serves as another good example of when we need to be careful. There is no way of knowing whether a missing value in credit score means high (below 301) or high (above 850). Therefore, it is essential that we remove all rows with missing value on credit score when doing any analysis relate to it. Any other way of dealing with these missing values will certainly introduce bias.
-
-
-### Quality of the Data
-The data quality is what you would expect from a government-sponsored enterprise. Exstensive data wrangling and manipulation is inevitable since people have different intentions of usage and use different softwares. 
-
-  
-
-- Some of the values are coded in a way that we will not know about the exact value of the variable. (Eg: Credit score--below 301:space, above 850:space), poses problems. Some of the variables are unknown too. 
-
-
-## Preparation
-Preparation. What changes? Recoding i.e. mutate, filter, remove NA etc.
 
 # Study Plan
 
