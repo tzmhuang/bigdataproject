@@ -9,10 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Add your name" />
-<meta name="author" content="Add your name" />
-<meta name="author" content="Add your name" />
-<meta name="author" content="Erik Stenberg" />
+<meta name="author" content="Erik Stenberg 3035428720" />
+<meta name="author" content="Huang Zanming 3035182081" />
+<meta name="author" content="Wong Kwan Yi 3035503192" />
+<meta name="author" content="Wong Yick Lun 3035281407" />
 
 
 <title>Project Proposal</title>
@@ -48,16 +48,6 @@ if (window.hljs) {
 </script>
 
 
-<style type="text/css">
-  p.abstract{
-    text-align: center;
-    font-weight: bold;
-  }
-  div.abstract{
-    margin: auto;
-    width: 90%;
-  }
-</style>
 
 <style type="text/css">
 h1 {
@@ -182,14 +172,10 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Project Proposal</h1>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Erik Stenberg</em></h4>
-<div class="abstract">
-<p class="abstract">Abstract</p>
-<p>An abstract is a self-contained, short, and powerful statement that describes a larger work. Components vary according to discipline. An abstract of a social science or scientific work may contain the scope, purpose, results, and contents of the work. An abstract of a humanities work may contain the thesis, background, and conclusion of the larger work. An abstract is not a review, nor does it evaluate the work being abstracted. s</p>
-</div>
+<h4 class="author"><em>Erik Stenberg 3035428720</em></h4>
+<h4 class="author"><em>Huang Zanming 3035182081</em></h4>
+<h4 class="author"><em>Wong Kwan Yi 3035503192</em></h4>
+<h4 class="author"><em>Wong Yick Lun 3035281407</em></h4>
 
 </div>
 
@@ -201,15 +187,426 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <div id="objectives" class="section level1">
 <h1>Objectives</h1>
-<p>See <span class="citation">Lortie (2017)</span> or perhaps <span class="citation">Ihaka and Gentleman (1996)</span></p>
+<div id="background-of-project" class="section level3">
+<h3>Background of project:</h3>
 </div>
-<div id="data" class="section level1">
-<h1>Data</h1>
-<div id="subsection-description" class="section level2">
-<h2>Subsection: Description</h2>
+<div id="problem-of-the-study" class="section level3">
+<h3>Problem of the study:</h3>
 </div>
-<div id="subsection-preparation" class="section level2">
-<h2>Subsection: Preparation</h2>
+<div id="project-objectives" class="section level3">
+<h3>Project Objectives:</h3>
+</div>
+</div>
+<div id="description-of-data" class="section level1">
+<h1>Description of data</h1>
+<div id="source-of-data" class="section level3">
+<h3>Source of Data</h3>
+<p>The dataset utilised in this project is provided by The Federal Home Loan Mortgage Corporation (FHLMC), also known as Freddie Mac. Freddie Mac is a government-sponsored private corporation which aims at providing liquidity, stability and affordability to the U.S. housing market by purchasing residential mortgage loans from the lenders on the secondary mortgage market and consequently sell them to other investors on the market. By doing this, Freddie Mac maintains a stable money flow to the mortgage loan lenders on the market in pursuits of easier homeownership and rental housing for the U.S. citizens.</p>
+<p>The liability of the dataset can be guaranteed as Freddie Mac is regulated by the Federal Housing Finance Agency (FHFA), an independent federal agency with expanded legal and regulatory authority and power of several departments of the U.S. Federal Government, such as the Federal Housing Finance Board (FHFB), the Office of Federal Housing Enterprise Oversight (OFHEO) etc. Regardless of the trustworthiness of the dataset, incompleteness and errors are expected.</p>
+</div>
+<div id="method-of-data-collection" class="section level3">
+<h3>Method of data collection</h3>
+<p>In hopes of increasing transparency, Freddie Mac has disclosed monthly loan-level credit performance data on a portion of fully amortising fixed-rate mortgages that the company purchased or guaranteed from 1999 to 2017, which could be viewed and downloaded freely on their official website.</p>
+</div>
+<div id="background-information-of-the-data" class="section level3">
+<h3>Background information of the data</h3>
+<p>The Single Family Loan-Level Dataset (the dataset) originally covers approximately 26 million fixed-rate mortgages. Albeit the huge data size, our group will focus on the data between 2007 to 2016 due to limited hardware power of the machines such as memory and storage.</p>
+<p>The dataset has two parts: loan origination data and monthly performance data. In the case where the loan is in the origination part but not the performance part, the loan was paid off before the first cycle begins or in the month of origination. The variables in the dataset will be discussed in later sessions.</p>
+</div>
+</div>
+<div id="description-of-variables" class="section level1">
+<h1>Description of variables:</h1>
+<div id="origination-dataset" class="section level3">
+<h3>Origination Dataset<br /></h3>
+<p>In the origination data file, there are a total of 26 variables. The table below describes the variables in the dataset.</p>
+<table style="width:89%;">
+<colgroup>
+<col width="9%"></col>
+<col width="29%"></col>
+<col width="38%"></col>
+<col width="11%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Variable Name</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Credit Score</td>
+<td>Represents the borrower’s creditworthiness and indicates the likelihood he/she will timely repay future obligation</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>First payment date</td>
+<td>Date of the first scheduled mortgage payment.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>First time homebuyer flag</td>
+<td>Indicates whether the Borrower is an individual who (1) is purchasing the mortgaged property, (2) will reside in the mortgaged property as a primary residence and (3) had no ownership interest (sole or joint) in a residential property during the three-year period preceding the date of the purchase of the mortgaged property.</td>
+<td>Categorical Y=Yes N=No 9=Not Available</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Maturity date</td>
+<td>The date in which the final monthly payment on the mortgage is scheduled to be made as stated on the original mortgage note.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Metropolitan Division</td>
+<td>Indicates the metropolitan in which the mortgaged property is located.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Mortgage Insurance Percentage (MI%)</td>
+<td>The percentage of loss coverage on the loan, at the time of Freddie Mac’s purchase of the mortgage loan</td>
+<td>Numeric 1% - 55% 000 = No MI 999 = Not Available</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Number of units</td>
+<td>whether the mortgage is a one-, two-, three-, or four-unit property.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Occupancy Status</td>
+<td>whether the mortgage type is owner occupied, second home, or investment property.</td>
+<td>Categorical P = Primary Residence I = Investment Property S = Second Home 9 = Not Available</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Original Combined Loan-To-value (CLT)</td>
+<td>0% - 200% 999 = Not Available</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Original Debt-to-Income (DTI) Ratio</td>
+<td>Ratios greater than 65% are indicated that data is Not Available.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Original UPB</td>
+<td>The UPB of the mortgage</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Original loan to value (LTV)</td>
+<td>Ratios below 6% or greater than 105% will be disclosed as “Not Available,” indicated by 999.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Original Interest Rate</td>
+<td>The original note rate as indicated on the mortgage note</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Channel</td>
+<td>R=Retail B=Broker C=Correspondent T=TPO Not Specified 9=Not Available</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Prepayment penalty mortage (PPM) Flag</td>
+<td>A mortgage with respect to which the borrower is, or at any time has been, obligated to pay a penalty in the event of certain repayments of principal.</td>
+<td>Categorical Y=PPM N=Not PPM</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Product type</td>
+<td>Denotes that the product is a fixed-rate mortgage.</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Property State</td>
+<td>Indicating the state or territory within which the property securing the mortgage is located.</td>
+<td>Categorical</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Property Type</td>
+<td>Denotes whether the property type secured by the mortgage is a condominium, leasehold, planned unit development (PUD), cooperative share, manufactured home, or Single Family home.</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Postal Code</td>
+<td>The postal code for the location of the mortgaged property</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Loan sequence number</td>
+<td>Unique identifier assigned to each loan.</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>Loan Purpose</td>
+<td>P = Purchase C = Cash-out Refinance N = No Cash-out Refinance 9 =Not Available</td>
+<td>Categorical</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>Original Loan Term</td>
+<td>A calculation of the number of scheduled monthly payments of the mortgage based on the First Payment Date and Maturity Date</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Number of borrowers</td>
+<td>Number of borrowers of the loan.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>Seller Name</td>
+<td>The name of the seller.</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>Servicer Name</td>
+<td>Name of servicer.</td>
+<td>Categorical</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>Super conforming flag</td>
+<td>For mortgages that exceed conforming loan limits with origination dates on or after 10/1/2008 and settlements on or after 1/1/2009</td>
+<td>Categorical</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="monthly-performance-dataset" class="section level3">
+<h3>Monthly Performance Dataset<br /></h3>
+<p>In the monthly performance dataset, there are a total of 24 variables. The table below describes the variables in the dataset.</p>
+<table style="width:89%;">
+<colgroup>
+<col width="9%"></col>
+<col width="29%"></col>
+<col width="38%"></col>
+<col width="11%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Variable Name</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Loan Sequence Number</td>
+<td>Unique identifier assigned to each loan.</td>
+<td>Categorical</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Monthly reporting period</td>
+<td>The as-of month for loan information contained in the loan record.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Current Actual UPB</td>
+<td>Reflects the mortgage ending balance as reported by the servicer for the corresponding monthly reporting period.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Current Loan Delinquency Status</td>
+<td>A value corresponding to the number of days the borrower is delinquent</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Loan Age</td>
+<td>The number of months since the note origination month of the mortgage.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Remaining months to legal maturity</td>
+<td>Unique identifier assigned to each loan.</td>
+<td>categorical</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Repurchase flag</td>
+<td>Indicates loans that have been repurchased or made whole (not inclusive of pool-level repurchase settlements).</td>
+<td>categorical</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Modification Flag</td>
+<td>For mortgages with loan modifications, indicates that the loan has been modified.</td>
+<td>Categorical</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Zero Balance Code</td>
+<td>A code indicating the reason the loan’s balance was reduced to zero.</td>
+<td>Categorical</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Zero Balance Effective Date</td>
+<td>The date on which the event triggering the Zero Balance Code took place.</td>
+<td>Date</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Current Interest Rate</td>
+<td>Reflects the current interest rate on the mortgage note, taking into account any loan modifications.</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Current Deferred UPB</td>
+<td>The current non-interest bearing UPB of the modified mortgage.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Due Date of Last Paid Installment (DDLPI)</td>
+<td>The due date that the loan’s scheduled principal and interest is paid through, regardless of when the installment payment was actually made.</td>
+<td>Date</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>MI Recoveries</td>
+<td>Mortgage Insurance Recoveries are proceeds received by Freddie Mac in the event of credit losses.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Net Sales Proceeds</td>
+<td>The amount remitted to Freddie Mac resulting from a property disposition.</td>
+<td>Categorical,Numeric</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Non-MI Recoveries</td>
+<td>Non-MI Recoveries are proceeds received by Freddie Mac based on repurchase/make whole proceeds, non-sale income such as refunds (tax or insurance), hazard insurance proceeds, rental receipts, positive escrow and/or other miscellaneous credits.</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Expenses</td>
+<td>Expenses will include allowable expenses that Freddie Mac bears in the process of acquiring, maintaining and/ or disposing a property (excluding selling expenses, which are subtracted from gross sales proceeds to derive net sales proceeds).</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Legal Costs</td>
+<td>The amount of legal costs associated with the sale of a property (but not included in Net Sale Proceeds).</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Maintenance and preservation costs</td>
+<td>The amount of maintenance, preservation, and repair costs, including but not limited to property inspection, homeowner’s association, utilities, and REO management, that is associated with the sale of a property (but not included in Net Sale Proceeds).</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Taxes and Insurance</td>
+<td>The amount of taxes and insurance owed that are associated with the sale of a property (but not included in Net Sale Proceeds)</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>Miscellanesous Expenses</td>
+<td>Miscellaneous expenses associated with the sale of a property (but not included in net sales proceeds)</td>
+<td>Numeric</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>Actual Loss Calculation</td>
+<td>Actual Loss of the loan</td>
+<td>Numeric</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Modification Cost</td>
+<td>The cumulative modification cost amount calculated when Freddie Mac determines such mortgage loan has experienced a rate modification event.</td>
+<td>Numeric</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="quality-of-the-data" class="section level3">
+<h3>Quality of the data</h3>
+<p>Many empty or N/A values in the monthly performance data set.<br /> The Dataset is sparse in nature. 15 out of 23 total columns are mostly empty or not avalible. Some columns such as Repurchase Flag, Modification Flag, Zero Balance Code, and Zero Balance Effective Data are left empty on purpose, as these data are only avalible in the loan termination months. Also columns like Legal Costs, Tax and Insurance, Miscellaneous Expenses are left empty as the data are only applicable when loan ends with foreclosure or REO Disposition. However other columns such as Actual Loss Calculation are left empty without expanation. Due to the lack of data, there will be certain limitations in future analysis.</p>
+</div>
+<div id="preparation" class="section level2">
+<h2>Preparation</h2>
+<p>Many of the variables in the data are coded in ways that may not be optimal for further analysis. We will therefore recode many of the variable into forms that are easier to handle. Below are a few examples that represents most of the variable recodings done.</p>
+<table>
+<colgroup>
+<col width="23%"></col>
+<col width="20%"></col>
+<col width="19%"></col>
+<col width="36%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Current range</th>
+<th>New Range</th>
+<th>Example Manipulation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>First Time<br />
+Homebuyer Flag</p></td>
+<td><p>Y=YES<br />
+N=NO<br />
+Space(1) for<br />
+Unknown/miss<br />
+</p></td>
+<td><p>Y = 1<br />
+N = 0<br />
+</p></td>
+<td><p><code>data %&gt;%</code><br />
+<code>mutate(flag=</code><br />
+<code>if_else(fthb==&quot;Y&quot;, 1,</code><br />
+<code>if_else(fthb==&quot;N&quot;,0,NA)))</code></p></td>
+</tr>
+<tr class="even">
+<td><p>Credit Score</p></td>
+<td><p>301-850<br />
+Space(3) =<br />
+Unknown, if<br />
+CS &lt; 301 or<br />
+CS &gt; 851</p></td>
+<td><p>301-850</p></td>
+<td><p><code>data %&gt;%</code><br />
+<code>filter(CS %in% c(301:850))</code></p></td>
+</tr>
+</tbody>
+</table>
+<p>Many binary variables are coded as ‘YES’ and ‘NO’ and spaces for unknown, while in R those variables should be recoded into numerical <code>1</code> for ‘YES’, <code>0</code> for ‘NO’ and <code>NA</code> for the missing values. The credit score variable serves as another good example of when we need to be careful. There is no way of knowing whether a missing value in credit score means high (below 301) or high (above 850). Therefore, it is essential that we remove all rows with missing value on credit score when doing any analysis relate to it. Any other way of dealing with these missing values will certainly introduce bias.</p>
 </div>
 </div>
 <div id="study-plan" class="section level1">
@@ -218,17 +615,9 @@ $(document).ready(function () {
 <div id="referenecs" class="section level1">
 <h1>Referenecs</h1>
 <!-- rnb-text-end -->
-<div id="refs" class="references">
-<div id="ref-ihaka1996">
-<p>Ihaka, Ross, and Robert Gentleman. 1996. “R: A Language for Data Analysis and Graphics.” <em>Journal of Computational and Graphical Statistics</em> 5 (3): 299–314.</p>
-</div>
-<div id="ref-lortie2017">
-<p>Lortie, Christopher. 2017. “R for Data Science.” <em>Journal of Statistical Software</em> 77 (1). Foundation for Open Access Statistics: 1–3. <a href="https://doaj.org/article/eadfedd2c6954cd7a01bdeffaa310074" class="uri">https://doaj.org/article/eadfedd2c6954cd7a01bdeffaa310074</a>.</p>
-</div>
-</div>
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUHJvamVjdCBQcm9wb3NhbCIKCmF1dGhvcjoKLSAiQWRkIHlvdXIgbmFtZSIKLSAiQWRkIHlvdXIgbmFtZSIKLSAiQWRkIHlvdXIgbmFtZSIKLSAiRXJpayBTdGVuYmVyZyIKCmFic3RyYWN0OiB8CiAgQW4gYWJzdHJhY3QgaXMgYSBzZWxmLWNvbnRhaW5lZCwgc2hvcnQsIGFuZCBwb3dlcmZ1bCBzdGF0ZW1lbnQgdGhhdCBkZXNjcmliZXMgYSBsYXJnZXIgd29yay4gQ29tcG9uZW50cyB2YXJ5IGFjY29yZGluZyB0byBkaXNjaXBsaW5lLiBBbiBhYnN0cmFjdCBvZiBhIHNvY2lhbCBzY2llbmNlIG9yIHNjaWVudGlmaWMgd29yayBtYXkgY29udGFpbiB0aGUgc2NvcGUsIHB1cnBvc2UsIHJlc3VsdHMsIGFuZCBjb250ZW50cyBvZiB0aGUgd29yay4gQW4gYWJzdHJhY3Qgb2YgYSBodW1hbml0aWVzIHdvcmsgbWF5IGNvbnRhaW4gdGhlIHRoZXNpcywgYmFja2dyb3VuZCwgYW5kIGNvbmNsdXNpb24gb2YgdGhlIGxhcmdlciB3b3JrLiBBbiBhYnN0cmFjdCBpcyBub3QgYSByZXZpZXcsIG5vciBkb2VzIGl0IGV2YWx1YXRlIHRoZSB3b3JrIGJlaW5nIGFic3RyYWN0ZWQuICBzCgpiaWJsaW9ncmFwaHk6IGJpYmxpb2dyYXBoeS5iaWIKCm91dHB1dDoKICBwZGZfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQoKYGBge3IsIGVjaG89RkFMU0V9Cm9wdGlvbnMoY2l0ci51c2VfYmV0dGVyYmlibGF0ZXggPSBGQUxTRSkKYGBgCgoKIyBPYmplY3RpdmVzCgpTZWUgQGxvcnRpZTIwMTcgb3IgcGVyaGFwcyBAaWhha2ExOTk2CgojIERhdGEKCiMjIFN1YnNlY3Rpb246IERlc2NyaXB0aW9uCgojIyBTdWJzZWN0aW9uOiBQcmVwYXJhdGlvbgoKIyBTdHVkeSBQbGFuCgojIFJlZmVyZW5lY3MKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUHJvamVjdCBQcm9wb3NhbCIKCmF1dGhvcjoKLSAiRXJpayBTdGVuYmVyZyAgMzAzNTQyODcyMCIKLSAiSHVhbmcgWmFubWluZyAgMzAzNTE4MjA4MSIKLSAiV29uZyBLd2FuIFlpICAgMzAzNTUwMzE5MiIKLSAiV29uZyBZaWNrIEx1biAgMzAzNTI4MTQwNyIKCgpiaWJsaW9ncmFwaHk6IGJpYmxpb2dyYXBoeS5iaWIKCm91dHB1dDoKICBwZGZfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQoKYGBge3IsIGVjaG89RkFMU0V9Cm9wdGlvbnMoY2l0ci51c2VfYmV0dGVyYmlibGF0ZXggPSBGQUxTRSkKYGBgCiNPYmplY3RpdmVzCgojIyMgQmFja2dyb3VuZCBvZiBwcm9qZWN0OgoKIyMjIFByb2JsZW0gb2YgdGhlIHN0dWR5OgoKIyMjIFByb2plY3QgT2JqZWN0aXZlczoKCiMgRGVzY3JpcHRpb24gb2YgZGF0YQoKIyMjIFNvdXJjZSBvZiBEYXRhCgpUaGUgZGF0YXNldCB1dGlsaXNlZCBpbiB0aGlzIHByb2plY3QgaXMgcHJvdmlkZWQgYnkgVGhlIEZlZGVyYWwgSG9tZSBMb2FuIE1vcnRnYWdlIENvcnBvcmF0aW9uIChGSExNQyksIGFsc28ga25vd24gYXMgRnJlZGRpZSBNYWMuIEZyZWRkaWUgTWFjIGlzIGEgZ292ZXJubWVudC1zcG9uc29yZWQgcHJpdmF0ZSBjb3Jwb3JhdGlvbiB3aGljaCBhaW1zIGF0IHByb3ZpZGluZyBsaXF1aWRpdHksIHN0YWJpbGl0eSBhbmQgYWZmb3JkYWJpbGl0eSB0byB0aGUgVS5TLiBob3VzaW5nIG1hcmtldCBieSBwdXJjaGFzaW5nIHJlc2lkZW50aWFsIG1vcnRnYWdlIGxvYW5zIGZyb20gdGhlIGxlbmRlcnMgb24gdGhlIHNlY29uZGFyeSBtb3J0Z2FnZSBtYXJrZXQgYW5kIGNvbnNlcXVlbnRseSBzZWxsIHRoZW0gdG8gb3RoZXIgaW52ZXN0b3JzIG9uIHRoZSBtYXJrZXQuIEJ5IGRvaW5nIHRoaXMsIEZyZWRkaWUgTWFjIG1haW50YWlucyBhIHN0YWJsZSBtb25leSBmbG93IHRvIHRoZSBtb3J0Z2FnZSBsb2FuIGxlbmRlcnMgb24gdGhlIG1hcmtldCBpbiBwdXJzdWl0cyBvZiBlYXNpZXIgaG9tZW93bmVyc2hpcCBhbmQgcmVudGFsIGhvdXNpbmcgZm9yIHRoZSBVLlMuIGNpdGl6ZW5zLgoKVGhlIGxpYWJpbGl0eSBvZiB0aGUgZGF0YXNldCBjYW4gYmUgZ3VhcmFudGVlZCBhcyBGcmVkZGllIE1hYyBpcyByZWd1bGF0ZWQgYnkgdGhlIEZlZGVyYWwgSG91c2luZyBGaW5hbmNlIEFnZW5jeSAoRkhGQSksIGFuIGluZGVwZW5kZW50IGZlZGVyYWwgYWdlbmN5IHdpdGggZXhwYW5kZWQgbGVnYWwgYW5kIHJlZ3VsYXRvcnkgYXV0aG9yaXR5IGFuZCBwb3dlciBvZiBzZXZlcmFsIGRlcGFydG1lbnRzIG9mIHRoZSBVLlMuIEZlZGVyYWwgR292ZXJubWVudCwgc3VjaCBhcyB0aGUgRmVkZXJhbCBIb3VzaW5nIEZpbmFuY2UgQm9hcmQgKEZIRkIpLCB0aGUgT2ZmaWNlIG9mIEZlZGVyYWwgSG91c2luZyBFbnRlcnByaXNlIE92ZXJzaWdodCAoT0ZIRU8pIGV0Yy4gUmVnYXJkbGVzcyBvZiB0aGUgdHJ1c3R3b3J0aGluZXNzIG9mIHRoZSBkYXRhc2V0LCBpbmNvbXBsZXRlbmVzcyBhbmQgZXJyb3JzIGFyZSBleHBlY3RlZC4KCiMjIyBNZXRob2Qgb2YgZGF0YSBjb2xsZWN0aW9uCgpJbiBob3BlcyBvZiBpbmNyZWFzaW5nIHRyYW5zcGFyZW5jeSwgRnJlZGRpZSBNYWMgaGFzIGRpc2Nsb3NlZCBtb250aGx5IGxvYW4tbGV2ZWwgY3JlZGl0IHBlcmZvcm1hbmNlIGRhdGEgb24gYSBwb3J0aW9uIG9mIGZ1bGx5IGFtb3J0aXNpbmcgZml4ZWQtcmF0ZSBtb3J0Z2FnZXMgdGhhdCB0aGUgY29tcGFueSBwdXJjaGFzZWQgb3IgZ3VhcmFudGVlZCBmcm9tIDE5OTkgdG8gMjAxNywgd2hpY2ggY291bGQgYmUgdmlld2VkIGFuZCBkb3dubG9hZGVkIGZyZWVseSBvbiB0aGVpciBvZmZpY2lhbCB3ZWJzaXRlLgoKIyMjICBCYWNrZ3JvdW5kIGluZm9ybWF0aW9uIG9mIHRoZSBkYXRhCgpUaGUgU2luZ2xlIEZhbWlseSBMb2FuLUxldmVsIERhdGFzZXQgKHRoZSBkYXRhc2V0KSBvcmlnaW5hbGx5IGNvdmVycyBhcHByb3hpbWF0ZWx5IDI2IG1pbGxpb24gZml4ZWQtcmF0ZSBtb3J0Z2FnZXMuIEFsYmVpdCB0aGUgaHVnZSBkYXRhIHNpemUsIG91ciBncm91cCB3aWxsIGZvY3VzIG9uIHRoZSBkYXRhIGJldHdlZW4gMjAwNyB0byAyMDE2IGR1ZSB0byBsaW1pdGVkIGhhcmR3YXJlIHBvd2VyIG9mIHRoZSBtYWNoaW5lcyBzdWNoIGFzIG1lbW9yeSBhbmQgc3RvcmFnZS4KClRoZSBkYXRhc2V0IGhhcyB0d28gcGFydHM6IGxvYW4gb3JpZ2luYXRpb24gZGF0YSBhbmQgbW9udGhseSBwZXJmb3JtYW5jZSBkYXRhLiBJbiB0aGUgY2FzZSB3aGVyZSB0aGUgbG9hbiBpcyBpbiB0aGUgb3JpZ2luYXRpb24gcGFydCBidXQgbm90IHRoZSBwZXJmb3JtYW5jZSBwYXJ0LCB0aGUgbG9hbiB3YXMgcGFpZCBvZmYgYmVmb3JlIHRoZSBmaXJzdCBjeWNsZSBiZWdpbnMgb3IgaW4gdGhlIG1vbnRoIG9mIG9yaWdpbmF0aW9uLiBUaGUgdmFyaWFibGVzIGluIHRoZSBkYXRhc2V0IHdpbGwgYmUgZGlzY3Vzc2VkIGluIGxhdGVyIHNlc3Npb25zLgoKCiMgRGVzY3JpcHRpb24gb2YgdmFyaWFibGVzOiAKIyMjIE9yaWdpbmF0aW9uIERhdGFzZXQ8YnIvPgpJbiB0aGUgb3JpZ2luYXRpb24gZGF0YSBmaWxlLCB0aGVyZSBhcmUgYSB0b3RhbCBvZiAyNiB2YXJpYWJsZXMuIFRoZSB0YWJsZSBiZWxvdyBkZXNjcmliZXMgdGhlIHZhcmlhYmxlcyBpbiB0aGUgZGF0YXNldC4gCgp8fFZhcmlhYmxlIE5hbWV8RGVzY3JpcHRpb258VHlwZXwKfCAtLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLSB8IC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSB8IC0tLS0tLS0gfAp8MSAgICAgfENyZWRpdCBTY29yZXxSZXByZXNlbnRzIHRoZSBib3Jyb3dlcidzIGNyZWRpdHdvcnRoaW5lc3MgYW5kIGluZGljYXRlcyB0aGUgbGlrZWxpaG9vZCBoZS9zaGUgd2lsbCB0aW1lbHkgcmVwYXkgZnV0dXJlIG9ibGlnYXRpb24gfE51bWVyaWN8CnwyICAgICB8Rmlyc3QgcGF5bWVudCBkYXRlfERhdGUgb2YgdGhlIGZpcnN0IHNjaGVkdWxlZCBtb3J0Z2FnZSBwYXltZW50LiB8TnVtZXJpY3wKfDMgICAgIHxGaXJzdCB0aW1lIGhvbWVidXllciBmbGFnfEluZGljYXRlcyB3aGV0aGVyIHRoZSBCb3Jyb3dlciBpcyBhbiBpbmRpdmlkdWFsIHdobyAgKDEpIGlzIHB1cmNoYXNpbmcgdGhlIG1vcnRnYWdlZCBwcm9wZXJ0eSwgICAoMikgd2lsbCByZXNpZGUgaW4gdGhlIG1vcnRnYWdlZCBwcm9wZXJ0eSBhcyBhIHByaW1hcnkgcmVzaWRlbmNlIGFuZCAgICgzKSBoYWQgbm8gb3duZXJzaGlwIGludGVyZXN0IChzb2xlIG9yIGpvaW50KSBpbiBhIHJlc2lkZW50aWFsIHByb3BlcnR5IGR1cmluZyB0aGUgdGhyZWUteWVhciBwZXJpb2QgcHJlY2VkaW5nIHRoZSBkYXRlIG9mIHRoZSBwdXJjaGFzZSBvZiB0aGUgbW9ydGdhZ2VkIHByb3BlcnR5LnxDYXRlZ29yaWNhbCAgWT1ZZXMgIE49Tm8gIDk9Tm90IEF2YWlsYWJsZXwKfDQgICAgIHxNYXR1cml0eSBkYXRlIHxUaGUgZGF0ZSBpbiB3aGljaCB0aGUgZmluYWwgbW9udGhseSBwYXltZW50IG9uIHRoZSBtb3J0Z2FnZSBpcyBzY2hlZHVsZWQgdG8gYmUgbWFkZSBhcyBzdGF0ZWQgb24gdGhlIG9yaWdpbmFsIG1vcnRnYWdlIG5vdGUuIHxOdW1lcmljfAp8NSAgICAgfE1ldHJvcG9saXRhbiBEaXZpc2lvbnxJbmRpY2F0ZXMgdGhlIG1ldHJvcG9saXRhbiBpbiB3aGljaCB0aGUgbW9ydGdhZ2VkIHByb3BlcnR5IGlzIGxvY2F0ZWQuIHxOdW1lcmljfAp8NiAgICAgfE1vcnRnYWdlIEluc3VyYW5jZSBQZXJjZW50YWdlIChNSSUpfFRoZSBwZXJjZW50YWdlIG9mIGxvc3MgY292ZXJhZ2Ugb24gdGhlIGxvYW4sIGF0IHRoZSB0aW1lIG9mIEZyZWRkaWUgTWFjJ3MgcHVyY2hhc2Ugb2YgdGhlIG1vcnRnYWdlIGxvYW4gfE51bWVyaWMgIDElIC0gNTUlICAwMDAgPSBObyBNSSAgIDk5OSA9IE5vdCBBdmFpbGFibGV8Cnw3ICAgICB8TnVtYmVyIG9mIHVuaXRzfHdoZXRoZXIgdGhlIG1vcnRnYWdlIGlzIGEgb25lLSwgdHdvLSwgdGhyZWUtLCBvciBmb3VyLXVuaXQgcHJvcGVydHkuICB8TnVtZXJpY3wKfDggICAgIHxPY2N1cGFuY3kgU3RhdHVzfHdoZXRoZXIgdGhlIG1vcnRnYWdlIHR5cGUgaXMgb3duZXIgb2NjdXBpZWQsIHNlY29uZCBob21lLCBvciBpbnZlc3RtZW50IHByb3BlcnR5LiB8Q2F0ZWdvcmljYWwgUCA9IFByaW1hcnkgUmVzaWRlbmNlICBJID0gSW52ZXN0bWVudCBQcm9wZXJ0eSAgUyA9IFNlY29uZCBIb21lICA5ID0gTm90IEF2YWlsYWJsZXwKfDkgICAgIHxPcmlnaW5hbCBDb21iaW5lZCBMb2FuLVRvLXZhbHVlIChDTFQpfDAlIC0gMjAwJSAgIDk5OSA9IE5vdCBBdmFpbGFibGV8TnVtZXJpY3wKfDEwICAgIHxPcmlnaW5hbCBEZWJ0LXRvLUluY29tZSAoRFRJKSBSYXRpb3xSYXRpb3MgZ3JlYXRlciB0aGFuIDY1JSBhcmUgaW5kaWNhdGVkIHRoYXQgZGF0YSBpcyBOb3QgQXZhaWxhYmxlLiB8TnVtZXJpY3wKfDExICAgIHxPcmlnaW5hbCBVUEJ8VGhlIFVQQiBvZiB0aGUgbW9ydGdhZ2UgICAgfE51bWVyaWN8CnwxMiAgICB8T3JpZ2luYWwgbG9hbiB0byB2YWx1ZSAoTFRWKXxSYXRpb3MgYmVsb3cgNiUgb3IgZ3JlYXRlciB0aGFuIDEwNSUgd2lsbCBiZSBkaXNjbG9zZWQgYXMgIk5vdCBBdmFpbGFibGUsIiBpbmRpY2F0ZWQgYnkgOTk5LiAgIHxOdW1lcmljfAp8MTMgICAgfE9yaWdpbmFsIEludGVyZXN0IFJhdGV8VGhlIG9yaWdpbmFsIG5vdGUgcmF0ZSBhcyBpbmRpY2F0ZWQgb24gdGhlIG1vcnRnYWdlIG5vdGUgIHxOdW1lcmljfAp8MTQgICAgfENoYW5uZWwgfFI9UmV0YWlsICBCPUJyb2tlciAgQz1Db3JyZXNwb25kZW50ICBUPVRQTyBOb3QgU3BlY2lmaWVkICA5PU5vdCBBdmFpbGFibGV8Q2F0ZWdvcmljYWx8CnwxNSAgICB8UHJlcGF5bWVudCBwZW5hbHR5IG1vcnRhZ2UgKFBQTSkgRmxhZ3xBIG1vcnRnYWdlIHdpdGggcmVzcGVjdCB0byB3aGljaCB0aGUgYm9ycm93ZXIgaXMsIG9yIGF0IGFueSB0aW1lIGhhcyBiZWVuLCBvYmxpZ2F0ZWQgdG8gcGF5IGEgcGVuYWx0eSBpbiB0aGUgZXZlbnQgb2YgY2VydGFpbiByZXBheW1lbnRzIG9mIHByaW5jaXBhbC58Q2F0ZWdvcmljYWwgIFk9UFBNICBOPU5vdCBQUE18CnwxNiAgICB8UHJvZHVjdCB0eXBlfERlbm90ZXMgdGhhdCB0aGUgcHJvZHVjdCBpcyBhIGZpeGVkLXJhdGUgbW9ydGdhZ2UufENhdGVnb3JpY2FsfAp8MTcgICAgfFByb3BlcnR5IFN0YXRlfEluZGljYXRpbmcgdGhlIHN0YXRlIG9yIHRlcnJpdG9yeSB3aXRoaW4gd2hpY2ggdGhlIHByb3BlcnR5IHNlY3VyaW5nIHRoZSBtb3J0Z2FnZSBpcyBsb2NhdGVkLnxDYXRlZ29yaWNhbHwKfDE4ICAgIHxQcm9wZXJ0eSBUeXBlfERlbm90ZXMgd2hldGhlciB0aGUgcHJvcGVydHkgdHlwZSBzZWN1cmVkIGJ5IHRoZSBtb3J0Z2FnZSBpcyBhIGNvbmRvbWluaXVtLCBsZWFzZWhvbGQsIHBsYW5uZWQgdW5pdCBkZXZlbG9wbWVudCAoUFVEKSwgY29vcGVyYXRpdmUgc2hhcmUsIG1hbnVmYWN0dXJlZCBob21lLCBvciBTaW5nbGUgRmFtaWx5IGhvbWUufENhdGVnb3JpY2FsfAp8MTkgICAgfFBvc3RhbCBDb2RlfFRoZSBwb3N0YWwgY29kZSBmb3IgdGhlIGxvY2F0aW9uIG9mIHRoZSBtb3J0Z2FnZWQgcHJvcGVydHl8TnVtZXJpY3wKfDIwICAgIHxMb2FuIHNlcXVlbmNlIG51bWJlcnxVbmlxdWUgaWRlbnRpZmllciBhc3NpZ25lZCB0byBlYWNoIGxvYW4ufENhdGVnb3JpY2FsfAp8MjEgICAgfExvYW4gUHVycG9zZXxQID0gUHVyY2hhc2UgIEMgPSBDYXNoLW91dCBSZWZpbmFuY2UgIE4gPSBObyBDYXNoLW91dCBSZWZpbmFuY2UgIDkgPU5vdCBBdmFpbGFibGUgfENhdGVnb3JpY2FsfAp8MjIgICAgfE9yaWdpbmFsIExvYW4gVGVybXxBIGNhbGN1bGF0aW9uIG9mIHRoZSBudW1iZXIgb2Ygc2NoZWR1bGVkIG1vbnRobHkgcGF5bWVudHMgb2YgdGhlIG1vcnRnYWdlIGJhc2VkIG9uIHRoZSBGaXJzdCBQYXltZW50IERhdGUgYW5kIE1hdHVyaXR5IERhdGUgfE51bWVyaWN8CnwyMyAgICB8TnVtYmVyIG9mIGJvcnJvd2Vyc3xOdW1iZXIgb2YgYm9ycm93ZXJzIG9mIHRoZSBsb2FuLiB8TnVtZXJpY3wKfDI0ICAgIHxTZWxsZXIgTmFtZXxUaGUgbmFtZSBvZiB0aGUgc2VsbGVyLiB8Q2F0ZWdvcmljYWx8CnwyNSAgICB8U2VydmljZXIgTmFtZXxOYW1lIG9mIHNlcnZpY2VyLiB8Q2F0ZWdvcmljYWx8CnwyNiAgICB8U3VwZXIgY29uZm9ybWluZyBmbGFnfEZvciBtb3J0Z2FnZXMgdGhhdCBleGNlZWQgY29uZm9ybWluZyBsb2FuIGxpbWl0cyB3aXRoIG9yaWdpbmF0aW9uIGRhdGVzIG9uIG9yIGFmdGVyIDEwLzEvMjAwOCBhbmQgc2V0dGxlbWVudHMgb24gb3IgYWZ0ZXIgMS8xLzIwMDkgfENhdGVnb3JpY2FsfAoKIyMjIE1vbnRobHkgUGVyZm9ybWFuY2UgRGF0YXNldDxici8+CkluIHRoZSBtb250aGx5IHBlcmZvcm1hbmNlIGRhdGFzZXQsIHRoZXJlIGFyZSBhIHRvdGFsIG9mIDI0IHZhcmlhYmxlcy4gVGhlIHRhYmxlIGJlbG93IGRlc2NyaWJlcyB0aGUgdmFyaWFibGVzIGluIHRoZSBkYXRhc2V0LgoKfHxWYXJpYWJsZSBOYW1lfERlc2NyaXB0aW9ufFR5cGV8CnwgLS0tLS0tIHwgLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gfCAtLS0tLS0tIHwKfDEgICAgIHxMb2FuIFNlcXVlbmNlIE51bWJlcnxVbmlxdWUgaWRlbnRpZmllciBhc3NpZ25lZCB0byBlYWNoIGxvYW4uIHxDYXRlZ29yaWNhbHwKfDIgICAgIHxNb250aGx5IHJlcG9ydGluZyBwZXJpb2R8VGhlIGFzLW9mIG1vbnRoIGZvciBsb2FuIGluZm9ybWF0aW9uIGNvbnRhaW5lZCBpbiB0aGUgbG9hbiByZWNvcmQuIHxOdW1lcmljfAp8MyAgICAgfEN1cnJlbnQgQWN0dWFsIFVQQnxSZWZsZWN0cyB0aGUgbW9ydGdhZ2UgZW5kaW5nIGJhbGFuY2UgYXMgcmVwb3J0ZWQgYnkgdGhlIHNlcnZpY2VyIGZvciB0aGUgY29ycmVzcG9uZGluZyBtb250aGx5IHJlcG9ydGluZyBwZXJpb2QuICB8TnVtZXJpY3wKfDQgICAgIHxDdXJyZW50IExvYW4gRGVsaW5xdWVuY3kgU3RhdHVzIHxBIHZhbHVlIGNvcnJlc3BvbmRpbmcgdG8gdGhlIG51bWJlciBvZiBkYXlzIHRoZSBib3Jyb3dlciBpcyBkZWxpbnF1ZW50fENhdGVnb3JpY2FsfAp8NSAgICAgfExvYW4gQWdlfFRoZSBudW1iZXIgb2YgbW9udGhzIHNpbmNlIHRoZSBub3RlIG9yaWdpbmF0aW9uIG1vbnRoIG9mIHRoZSBtb3J0Z2FnZS4gfE51bWVyaWN8Cnw2ICAgICB8UmVtYWluaW5nIG1vbnRocyB0byBsZWdhbCBtYXR1cml0eXxVbmlxdWUgaWRlbnRpZmllciBhc3NpZ25lZCB0byBlYWNoIGxvYW4uIHxjYXRlZ29yaWNhbHwKfDcgICAgIHxSZXB1cmNoYXNlIGZsYWd8SW5kaWNhdGVzIGxvYW5zIHRoYXQgaGF2ZSBiZWVuIHJlcHVyY2hhc2VkIG9yIG1hZGUgd2hvbGUgKG5vdCBpbmNsdXNpdmUgb2YgcG9vbC1sZXZlbCByZXB1cmNoYXNlIHNldHRsZW1lbnRzKS4gIHxjYXRlZ29yaWNhbHwKfDggICAgIHxNb2RpZmljYXRpb24gRmxhZ3xGb3IgbW9ydGdhZ2VzIHdpdGggbG9hbiBtb2RpZmljYXRpb25zLCBpbmRpY2F0ZXMgdGhhdCB0aGUgbG9hbiBoYXMgYmVlbiBtb2RpZmllZC4gIHxDYXRlZ29yaWNhbHwKfDkgICAgIHxaZXJvIEJhbGFuY2UgQ29kZXxBIGNvZGUgaW5kaWNhdGluZyB0aGUgcmVhc29uIHRoZSBsb2FuJ3MgYmFsYW5jZSB3YXMgcmVkdWNlZCB0byB6ZXJvLiB8Q2F0ZWdvcmljYWx8CnwxMCAgICB8WmVybyBCYWxhbmNlIEVmZmVjdGl2ZSBEYXRlfFRoZSBkYXRlIG9uIHdoaWNoIHRoZSBldmVudCB0cmlnZ2VyaW5nIHRoZSBaZXJvIEJhbGFuY2UgQ29kZSB0b29rIHBsYWNlLiB8RGF0ZXwKfDExICAgIHxDdXJyZW50IEludGVyZXN0IFJhdGV8UmVmbGVjdHMgdGhlIGN1cnJlbnQgaW50ZXJlc3QgcmF0ZSBvbiB0aGUgbW9ydGdhZ2Ugbm90ZSwgdGFraW5nIGludG8gYWNjb3VudCBhbnkgbG9hbiBtb2RpZmljYXRpb25zLiAgfE51bWVyaWN8CnwxMiAgICB8Q3VycmVudCBEZWZlcnJlZCBVUEJ8VGhlIGN1cnJlbnQgbm9uLWludGVyZXN0IGJlYXJpbmcgVVBCIG9mIHRoZSBtb2RpZmllZCBtb3J0Z2FnZS4gIHxOdW1lcmljfAp8MTMgICAgfER1ZSBEYXRlIG9mIExhc3QgUGFpZCBJbnN0YWxsbWVudCAoRERMUEkpfFRoZSBkdWUgZGF0ZSB0aGF0IHRoZSBsb2FuJ3Mgc2NoZWR1bGVkIHByaW5jaXBhbCBhbmQgaW50ZXJlc3QgaXMgcGFpZCB0aHJvdWdoLCByZWdhcmRsZXNzIG9mIHdoZW4gdGhlIGluc3RhbGxtZW50IHBheW1lbnQgd2FzIGFjdHVhbGx5IG1hZGUuICB8RGF0ZXwKfDE0ICAgIHxNSSBSZWNvdmVyaWVzIHxNb3J0Z2FnZSBJbnN1cmFuY2UgUmVjb3ZlcmllcyBhcmUgcHJvY2VlZHMgcmVjZWl2ZWQgYnkgRnJlZGRpZSBNYWMgaW4gdGhlIGV2ZW50IG9mIGNyZWRpdCBsb3NzZXMuIHxOdW1lcmljIHwKfDE1ICAgIHxOZXQgU2FsZXMgUHJvY2VlZHN8VGhlIGFtb3VudCByZW1pdHRlZCB0byBGcmVkZGllIE1hYyByZXN1bHRpbmcgZnJvbSBhIHByb3BlcnR5IGRpc3Bvc2l0aW9uLiAgfENhdGVnb3JpY2FsLE51bWVyaWN8CnwxNiAgICB8Tm9uLU1JIFJlY292ZXJpZXN8Tm9uLU1JIFJlY292ZXJpZXMgYXJlIHByb2NlZWRzIHJlY2VpdmVkIGJ5IEZyZWRkaWUgTWFjIGJhc2VkIG9uIHJlcHVyY2hhc2UvbWFrZSB3aG9sZSBwcm9jZWVkcywgbm9uLXNhbGUgaW5jb21lIHN1Y2ggYXMgcmVmdW5kcyAodGF4IG9yIGluc3VyYW5jZSksIGhhemFyZCBpbnN1cmFuY2UgcHJvY2VlZHMsIHJlbnRhbCByZWNlaXB0cywgcG9zaXRpdmUgZXNjcm93IGFuZC9vciBvdGhlciBtaXNjZWxsYW5lb3VzIGNyZWRpdHMufE51bWVyaWMgfAp8MTcgICAgfEV4cGVuc2VzfEV4cGVuc2VzIHdpbGwgaW5jbHVkZSBhbGxvd2FibGUgZXhwZW5zZXMgdGhhdCBGcmVkZGllIE1hYyBiZWFycyBpbiB0aGUgcHJvY2VzcyBvZiBhY3F1aXJpbmcsIG1haW50YWluaW5nIGFuZC8gb3IgZGlzcG9zaW5nIGEgcHJvcGVydHkgKGV4Y2x1ZGluZyBzZWxsaW5nIGV4cGVuc2VzLCB3aGljaCBhcmUgc3VidHJhY3RlZCBmcm9tIGdyb3NzIHNhbGVzIHByb2NlZWRzIHRvIGRlcml2ZSBuZXQgc2FsZXMgcHJvY2VlZHMpLiB8TnVtZXJpY3wKfDE4ICAgIHxMZWdhbCBDb3N0c3xUaGUgYW1vdW50IG9mIGxlZ2FsIGNvc3RzIGFzc29jaWF0ZWQgd2l0aCB0aGUgc2FsZSBvZiBhIHByb3BlcnR5IChidXQgbm90IGluY2x1ZGVkIGluIE5ldCBTYWxlIFByb2NlZWRzKS4gfE51bWVyaWN8CnwxOSAgICB8TWFpbnRlbmFuY2UgYW5kIHByZXNlcnZhdGlvbiBjb3N0c3xUaGUgYW1vdW50IG9mIG1haW50ZW5hbmNlLCBwcmVzZXJ2YXRpb24sIGFuZCByZXBhaXIgY29zdHMsIGluY2x1ZGluZyBidXQgbm90IGxpbWl0ZWQgdG8gcHJvcGVydHkgaW5zcGVjdGlvbiwgaG9tZW93bmVyJ3MgYXNzb2NpYXRpb24sIHV0aWxpdGllcywgYW5kIFJFTyBtYW5hZ2VtZW50LCB0aGF0IGlzIGFzc29jaWF0ZWQgd2l0aCB0aGUgc2FsZSBvZiBhIHByb3BlcnR5IChidXQgbm90IGluY2x1ZGVkIGluIE5ldCBTYWxlIFByb2NlZWRzKS58TnVtZXJpY3wKfDIwICAgIHxUYXhlcyBhbmQgSW5zdXJhbmNlfFRoZSBhbW91bnQgb2YgdGF4ZXMgYW5kIGluc3VyYW5jZSBvd2VkIHRoYXQgYXJlIGFzc29jaWF0ZWQgd2l0aCB0aGUgc2FsZSBvZiBhIHByb3BlcnR5IChidXQgbm90IGluY2x1ZGVkIGluIE5ldCBTYWxlIFByb2NlZWRzKXxOdW1lcmljfAp8MjEgICAgfE1pc2NlbGxhbmVzb3VzIEV4cGVuc2VzfE1pc2NlbGxhbmVvdXMgZXhwZW5zZXMgYXNzb2NpYXRlZCB3aXRoIHRoZSBzYWxlIG9mIGEgcHJvcGVydHkgKGJ1dCBub3QgaW5jbHVkZWQgaW4gbmV0IHNhbGVzIHByb2NlZWRzKXxOdW1lcmljfAp8MjIgICAgfEFjdHVhbCBMb3NzIENhbGN1bGF0aW9ufEFjdHVhbCBMb3NzIG9mIHRoZSBsb2FuIHxOdW1lcmljfAp8MjMgICAgfE1vZGlmaWNhdGlvbiBDb3N0fFRoZSBjdW11bGF0aXZlIG1vZGlmaWNhdGlvbiBjb3N0IGFtb3VudCBjYWxjdWxhdGVkIHdoZW4gRnJlZGRpZSBNYWMgZGV0ZXJtaW5lcyBzdWNoIG1vcnRnYWdlIGxvYW4gaGFzIGV4cGVyaWVuY2VkIGEgcmF0ZSBtb2RpZmljYXRpb24gZXZlbnQuIHxOdW1lcmljfAoKCiMjIyBRdWFsaXR5IG9mIHRoZSBkYXRhCgpNYW55IGVtcHR5IG9yIE4vQSB2YWx1ZXMgaW4gdGhlIG1vbnRobHkgcGVyZm9ybWFuY2UgZGF0YSBzZXQuPGJyLz4KVGhlIERhdGFzZXQgaXMgc3BhcnNlIGluIG5hdHVyZS4gMTUgb3V0IG9mIDIzIHRvdGFsIGNvbHVtbnMgYXJlIG1vc3RseSBlbXB0eSBvciBub3QgYXZhbGlibGUuIFNvbWUgY29sdW1ucyBzdWNoIGFzIFJlcHVyY2hhc2UgRmxhZywgTW9kaWZpY2F0aW9uIEZsYWcsIFplcm8gQmFsYW5jZSBDb2RlLCBhbmQgWmVybyBCYWxhbmNlIEVmZmVjdGl2ZSBEYXRhIGFyZSBsZWZ0IGVtcHR5IG9uIHB1cnBvc2UsIGFzIHRoZXNlIGRhdGEgYXJlIG9ubHkgYXZhbGlibGUgaW4gdGhlIGxvYW4gdGVybWluYXRpb24gbW9udGhzLiBBbHNvIGNvbHVtbnMgbGlrZSBMZWdhbCBDb3N0cywgVGF4IGFuZCBJbnN1cmFuY2UsIE1pc2NlbGxhbmVvdXMgRXhwZW5zZXMgYXJlIGxlZnQgZW1wdHkgYXMgdGhlIGRhdGEgYXJlIG9ubHkgYXBwbGljYWJsZSB3aGVuIGxvYW4gZW5kcyB3aXRoIGZvcmVjbG9zdXJlIG9yIFJFTyBEaXNwb3NpdGlvbi4gSG93ZXZlciBvdGhlciBjb2x1bW5zIHN1Y2ggYXMgQWN0dWFsIExvc3MgQ2FsY3VsYXRpb24gYXJlIGxlZnQgZW1wdHkgd2l0aG91dCBleHBhbmF0aW9uLiBEdWUgdG8gdGhlIGxhY2sgb2YgZGF0YSwgdGhlcmUgd2lsbCBiZSBjZXJ0YWluIGxpbWl0YXRpb25zIGluIGZ1dHVyZSBhbmFseXNpcy4gCgoKIyMgUHJlcGFyYXRpb24KTWFueSBvZiB0aGUgdmFyaWFibGVzIGluIHRoZSBkYXRhIGFyZSBjb2RlZCBpbiB3YXlzIHRoYXQgbWF5IG5vdCBiZSBvcHRpbWFsIGZvciBmdXJ0aGVyIGFuYWx5c2lzLiBXZSB3aWxsIHRoZXJlZm9yZSAgcmVjb2RlIG1hbnkgb2YgdGhlIHZhcmlhYmxlIGludG8gZm9ybXMgdGhhdCBhcmUgZWFzaWVyIHRvIGhhbmRsZS4gQmVsb3cgYXJlIGEgZmV3IGV4YW1wbGVzIHRoYXQgcmVwcmVzZW50cyBtb3N0IG9mIHRoZSB2YXJpYWJsZSByZWNvZGluZ3MgZG9uZS4gCgoKKy0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rCnwgVmFyaWFibGUgICAgICAgIHwgQ3VycmVudCByYW5nZSB8IE5ldyBSYW5nZSAgICB8ICAgICBFeGFtcGxlIE1hbmlwdWxhdGlvbiAgfAorPT09PT09PT09PT09PT09PT0rPT09PT09PT09PT09PT09Kz09PT09PT09PT09PT09Kz09PT09PT09PT09PT09PT09PT09PT09PT09PSsKfCBGaXJzdCBUaW1lXCAgICAgfCBZPVlFU1wgICAgICAgIHwgWSA9IDFcICAgICAgIHwgYGRhdGEgJT4lYCBcICB8CnwgSG9tZWJ1eWVyIEZsYWcgIHwgTj1OT1wgICAgICAgICB8IE4gPSAwXCAgICAgICB8ICBgbXV0YXRlKGZsYWc9YFwgfAp8ICAgICAgICAgICAgICAgICB8IFNwYWNlKDEpIGZvclwgfCAgICAgICAgICAgICAgfCAgYGlmX2Vsc2UoZnRoYj09IlkiLCAxLGBcfAp8ICAgICAgICAgICAgICAgICB8IFVua25vd24vbWlzc1wgfCAgICAgICAgICAgICAgfCAgYGlmX2Vsc2UoZnRoYj09Ik4iLDAsTkEpKSlgfAp8ICAgICAgICAgICAgICAgICB8ICAgICAgICAgICAgICAgfCAgICAgICAgICAgICAgfCAgfAorLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSsKfCBDcmVkaXQgU2NvcmUgICAgfCAzMDEtODUwXCAgICAgIHwgMzAxLTg1MCAgICAgIHxgZGF0YSAlPiVgIFwgICAgICAgICAgICAgICAgIHwKfCAgICAgICAgICAgICAgICAgfCBTcGFjZSgzKSA9IFwgIHwgICAgICAgICAgICAgIHxgZmlsdGVyKENTICVpbiUgYygzMDE6ODUwKSlgIHwKfCAgICAgICAgICAgICAgICAgfCBVbmtub3duLCBpZiBcIHwgICAgICAgICAgICAgIHwgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgICAgICAgICAgICAgICAgIHwgQ1MgPCAzMDEgb3IgXCB8ICAgICAgICAgICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8ICAgICAgICAgICAgICAgICB8IENTID4gODUxICAgICAgfCAgICAgICAgICAgICAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKKy0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rCgoKTWFueSBiaW5hcnkgdmFyaWFibGVzIGFyZSBjb2RlZCBhcyAnWUVTJyBhbmQgJ05PJyBhbmQgc3BhY2VzIGZvciB1bmtub3duLCB3aGlsZSBpbiBSIHRob3NlIHZhcmlhYmxlcyBzaG91bGQgYmUgcmVjb2RlZCBpbnRvIG51bWVyaWNhbCBgMWAgZm9yICdZRVMnLCBgMGAgZm9yICdOTycgYW5kIGBOQWAgZm9yIHRoZSBtaXNzaW5nIHZhbHVlcy4gVGhlIGNyZWRpdCBzY29yZSB2YXJpYWJsZSBzZXJ2ZXMgYXMgYW5vdGhlciBnb29kIGV4YW1wbGUgb2Ygd2hlbiB3ZSBuZWVkIHRvIGJlIGNhcmVmdWwuIFRoZXJlIGlzIG5vIHdheSBvZiBrbm93aW5nIHdoZXRoZXIgYSBtaXNzaW5nIHZhbHVlIGluIGNyZWRpdCBzY29yZSBtZWFucyBoaWdoIChiZWxvdyAzMDEpIG9yIGhpZ2ggKGFib3ZlIDg1MCkuIFRoZXJlZm9yZSwgaXQgaXMgZXNzZW50aWFsIHRoYXQgd2UgcmVtb3ZlIGFsbCByb3dzIHdpdGggbWlzc2luZyB2YWx1ZSBvbiBjcmVkaXQgc2NvcmUgd2hlbiBkb2luZyBhbnkgYW5hbHlzaXMgcmVsYXRlIHRvIGl0LiBBbnkgb3RoZXIgd2F5IG9mIGRlYWxpbmcgd2l0aCB0aGVzZSBtaXNzaW5nIHZhbHVlcyB3aWxsIGNlcnRhaW5seSBpbnRyb2R1Y2UgYmlhcy4KCiMgU3R1ZHkgUGxhbgoKIyBSZWZlcmVuZWNzCg==</div>
 
 
 
