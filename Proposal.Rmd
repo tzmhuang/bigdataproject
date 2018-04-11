@@ -25,12 +25,13 @@ options(citr.use_betterbiblatex = FALSE)
 ### Problem of the study:
 
 ### Project Objectives:
+1) To
 
 # Description of data
 
 ### Source of Data
 
-The dataset utilised in this project is provided by The Federal Home Loan Mortgage Corporation (FHLMC), also known as Freddie Mac. Freddie Mac is a government-sponsored private corporation which aims at providing liquidity, stability and affordability to the U.S. housing market by purchasing residential mortgage loans from the lenders on the secondary mortgage market and consequently sell them to other investors on the market, according to the website of @FreddieMac. By doing this, Freddie Mac maintains a stable money flow to the mortgage loan lenders on the market in pursuits of easier homeownership and rental housing for the U.S. citizens.
+The dataset utilised in this project is provided by The Federal Home Loan Mortgage Corporation (FHLMC), also known as Freddie Mac. Freddie Mac is a government-sponsored private corporation which aims at providing liquidity, stability and affordability to the U.S. housing market by purchasing residential mortgage loans from the lenders on the secondary mortgage market and consequently sell them to other investors on the market,according to the website of @FreddieMac. By doing this, Freddie Mac maintains a stable money flow to the mortgage loan lenders on the market in pursuits of easier homeownership and rental housing for the U.S. citizens.
 
 The liability of the dataset can be guaranteed as Freddie Mac is regulated by the Federal Housing Finance Agency (FHFA), an independent federal agency with expanded legal and regulatory authority and power of several departments of the U.S. Federal Government, such as the Federal Housing Finance Board (FHFB), the Office of Federal Housing Enterprise Oversight (OFHEO) etc. Regardless of the trustworthiness of the dataset, incompleteness and errors are expected.
 
@@ -108,14 +109,11 @@ In the monthly performance dataset, there are a total of 24 variables. The table
 |23    |Modification Cost|The cumulative modification cost amount calculated when Freddie Mac determines such mortgage loan has experienced a rate modification event. |Numeric|
 
 
-### Quality of the data
-
-Many empty or N/A values in the monthly performance data set.<br/>
+### Quality of the data and data preparation:
+1) Many empty or N/A values in the monthly performance data set.<br/>
 The Dataset is sparse in nature. 15 out of 23 total columns are mostly empty or not avalible. Some columns such as Repurchase Flag, Modification Flag, Zero Balance Code, and Zero Balance Effective Data are left empty on purpose, as these data are only avalible in the loan termination months. Also columns like Legal Costs, Tax and Insurance, Miscellaneous Expenses are left empty as the data are only applicable when loan ends with foreclosure or REO Disposition. However other columns such as Actual Loss Calculation are left empty without expanation. Due to the lack of data, there will be certain limitations in future analysis. 
 
-
-## Preparation
-Many of the variables in the data are coded in ways that may not be optimal for further analysis. We will therefore  recode many of the variable into forms that are easier to handle. Below are a few examples that represents most of the variable recodings done. 
+2) Many of the variables in the data are coded in ways that may not be optimal for further analysis. We will therefore  recode many of the variable into forms that are easier to handle. Below are a few examples that represents most of the variable recodings done. 
 
 
 +-----------------+---------------+--------------+---------------------------+
@@ -135,8 +133,26 @@ Many of the variables in the data are coded in ways that may not be optimal for 
 +-----------------+---------------+--------------+---------------------------+
 
 
-Many binary variables are coded as 'YES' and 'NO' and spaces for unknown, while in R those variables should be recoded into numerical `1` for 'YES', `0` for 'NO' and `NA` for the missing values. The credit score variable serves as another good example of when we need to be careful. There is no way of knowing whether a missing value in credit score means high (below 301) or high (above 850). Therefore, it is essential that we remove all rows with missing value on credit score when doing any analysis relate to it. Any other way of dealing with these missing values will certainly introduce bias.
+3) Many binary variables are coded as 'YES' and 'NO' and spaces for unknown, while in R those variables should be recoded into numerical `1` for 'YES', `0` for 'NO' and `NA` for the missing values. The credit score variable serves as another good example of when we need to be careful. There is no way of knowing whether a missing value in credit score means high (below 301) or high (above 850). Therefore, it is essential that we remove all rows with missing value on credit score when doing any analysis relate to it. Any other way of dealing with these missing values will certainly introduce bias.
+
+The data quality is what you would expect from a government-sponsored enterprise. Exstensive data wrangling and manipulation is inevitable since people have different intentions of usage and use different softwares. 
 
 # Study Plan
+
+## Data Visualisation
+We plan to do the following Data visualization on the dataset:
+
+1) Create an animated geographical map to show the location of the houses under mortgage either using the property state variable or the postal code variable in the origination data set.  We can also investigate the differences between the different states through the map. 
+
+2) Create a treemap using the loan purpose variable in the origination data set to analyze the loan purpose.
+
+3) Create a time series plot on the current interest rate variable in the monthly performance data set. We can use the plot to investigate if there are any trend or pattern in the time series. 
+
+## Modelling
+We plan to adapt the following modeling method in the project:
+
+1) To see if it is possible to fit a linear regression in the prediction of credit scores and interest rate. If so, we can use the regression model to predict the credit score and the interest rate. However, there are certain problems that might occur. Firstly, we need to ensure if there are any linear relationship between credit scores and the other variables. Second, we need to check for multicollinearity. If there is, we cannot fit a linear regression model to it and thus, we will have to look for other regressions model that might be a better fit to this dataset. 
+
+2) Using the time series plot we created, we can follow up by doing a time series forecasting on the current interest rate variable in the monthly performance dataset. Firstly, we can see if it is possible to fit any forecasting model such as ARIMA, ETS, etc. Secondly, we can test the accuracy of the forecasted values against the actual values in the dataset.
 
 # Referenecs
