@@ -51,18 +51,18 @@ In the origination data file, there are a total of 26 variables. The table below
 
 ||Variable Name|Description|Type|
 | ------ | -------------------- | --------------------------- | ------- |
-|1     |Credit Score|Represents the borrower’s creditworthiness and indicates the likelihood he/she will timely repay future obligation |Numeric|
+|1     |Credit Score|Represents the borrower's creditworthiness and indicates the likelihood he/she will timely repay future obligation |Numeric|
 |2     |First payment date|Date of the first scheduled mortgage payment. |Numeric|
 |3     |First time homebuyer flag|Indicates whether the Borrower is an individual who  (1) is purchasing the mortgaged property,   (2) will reside in the mortgaged property as a primary residence and   (3) had no ownership interest (sole or joint) in a residential property during the three-year period preceding the date of the purchase of the mortgaged property.|Categorical  Y=Yes  N=No  9=Not Available|
 |4     |Maturity date |The date in which the final monthly payment on the mortgage is scheduled to be made as stated on the original mortgage note. |Numeric|
 |5     |Metropolitan Division|Indicates the metropolitan in which the mortgaged property is located. |Numeric|
-|6     |Mortgage Insurance Percentage (MI%)|The percentage of loss coverage on the loan, at the time of Freddie Mac’s purchase of the mortgage loan |Numeric  1% - 55%  000 = No MI   999 = Not Available|
+|6     |Mortgage Insurance Percentage (MI%)|The percentage of loss coverage on the loan, at the time of Freddie Mac's purchase of the mortgage loan |Numeric  1% - 55%  000 = No MI   999 = Not Available|
 |7     |Number of units|whether the mortgage is a one-, two-, three-, or four-unit property.  |Numeric|
 |8     |Occupancy Status|whether the mortgage type is owner occupied, second home, or investment property. |Categorical P = Primary Residence  I = Investment Property  S = Second Home  9 = Not Available|
 |9     |Original Combined Loan-To-value (CLT)|0% - 200%   999 = Not Available|Numeric|
 |10    |Original Debt-to-Income (DTI) Ratio|Ratios greater than 65% are indicated that data is Not Available. |Numeric|
 |11    |Original UPB|The UPB of the mortgage    |Numeric|
-|12    |Original loan to value (LTV)|Ratios below 6% or greater than 105% will be disclosed as “Not Available,” indicated by 999.   |Numeric|
+|12    |Original loan to value (LTV)|Ratios below 6% or greater than 105% will be disclosed as "Not Available," indicated by 999.   |Numeric|
 |13    |Original Interest Rate|The original note rate as indicated on the mortgage note  |Numeric|
 |14    |Channel |R=Retail  B=Broker  C=Correspondent  T=TPO Not Specified  9=Not Available|Categorical|
 |15    |Prepayment penalty mortage (PPM) Flag|A mortgage with respect to which the borrower is, or at any time has been, obligated to pay a penalty in the event of certain repayments of principal.|Categorical  Y=PPM  N=Not PPM|
@@ -95,13 +95,13 @@ In the monthly performance dataset, there are a total of 24 variables. The table
 |10    |Zero Balance Effective Date|The date on which the event triggering the Zero Balance Code took place. |Date|
 |11    |Current Interest Rate|Reflects the current interest rate on the mortgage note, taking into account any loan modifications.  |Numeric|
 |12    |Current Deferred UPB|The current non-interest bearing UPB of the modified mortgage.  |Numeric|
-|13    |Due Date of Last Paid Installment (DDLPI)|The due date that the loan’s scheduled principal and interest is paid through, regardless of when the installment payment was actually made.  |Date|
+|13    |Due Date of Last Paid Installment (DDLPI)|The due date that the loan's scheduled principal and interest is paid through, regardless of when the installment payment was actually made.  |Date|
 |14    |MI Recoveries |Mortgage Insurance Recoveries are proceeds received by Freddie Mac in the event of credit losses. |Numeric |
 |15    |Net Sales Proceeds|The amount remitted to Freddie Mac resulting from a property disposition.  |Categorical,Numeric|
 |16    |Non-MI Recoveries|Non-MI Recoveries are proceeds received by Freddie Mac based on repurchase/make whole proceeds, non-sale income such as refunds (tax or insurance), hazard insurance proceeds, rental receipts, positive escrow and/or other miscellaneous credits.|Numeric |
 |17    |Expenses|Expenses will include allowable expenses that Freddie Mac bears in the process of acquiring, maintaining and/ or disposing a property (excluding selling expenses, which are subtracted from gross sales proceeds to derive net sales proceeds). |Numeric|
 |18    |Legal Costs|The amount of legal costs associated with the sale of a property (but not included in Net Sale Proceeds). |Numeric|
-|19    |Maintenance and preservation costs|The amount of maintenance, preservation, and repair costs, including but not limited to property inspection, homeowner’s association, utilities, and REO management, that is associated with the sale of a property (but not included in Net Sale Proceeds).|Numeric|
+|19    |Maintenance and preservation costs|The amount of maintenance, preservation, and repair costs, including but not limited to property inspection, homeowner's association, utilities, and REO management, that is associated with the sale of a property (but not included in Net Sale Proceeds).|Numeric|
 |20    |Taxes and Insurance|The amount of taxes and insurance owed that are associated with the sale of a property (but not included in Net Sale Proceeds)|Numeric|
 |21    |Miscellanesous Expenses|Miscellaneous expenses associated with the sale of a property (but not included in net sales proceeds)|Numeric|
 |22    |Actual Loss Calculation|Actual Loss of the loan |Numeric|
