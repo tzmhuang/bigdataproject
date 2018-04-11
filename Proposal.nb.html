@@ -9,10 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Add your name" />
-<meta name="author" content="Add your name" />
-<meta name="author" content="Add your name" />
-<meta name="author" content="Erik Stenberg" />
+<meta name="author" content="Erik Stenberg 3035428720" />
+<meta name="author" content="Huang Zanming 3035182081" />
+<meta name="author" content="Wong Kwan Yi 3035503192" />
+<meta name="author" content="Wong Yick Lun 3035281407" />
 
 
 <title>Project Proposal</title>
@@ -182,10 +182,10 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Project Proposal</h1>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Add your name</em></h4>
-<h4 class="author"><em>Erik Stenberg</em></h4>
+<h4 class="author"><em>Erik Stenberg 3035428720</em></h4>
+<h4 class="author"><em>Huang Zanming 3035182081</em></h4>
+<h4 class="author"><em>Wong Kwan Yi 3035503192</em></h4>
+<h4 class="author"><em>Wong Yick Lun 3035281407</em></h4>
 <div class="abstract">
 <p class="abstract">Abstract</p>
 <p>An abstract is a self-contained, short, and powerful statement that describes a larger work. Components vary according to discipline. An abstract of a social science or scientific work may contain the scope, purpose, results, and contents of the work. An abstract of a humanities work may contain the thesis, background, and conclusion of the larger work. An abstract is not a review, nor does it evaluate the work being abstracted. s</p>
@@ -199,17 +199,27 @@ $(document).ready(function () {
 <!-- rnb-chunk-begin -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="what-we-need-to-do" class="section level1">
+<h1>what we need to do:</h1>
+<p>Description of data and preliminary data preparation: Source of data: Freddie Mac, The Federal Home Loan Mortage Corp. (FHLMC). A government sponsored corporation that buys mortages and packages them into mortage-backed securities. (How they collect the data?) (What is the data about?)</p>
+<p>Description of major attributes (variables): Total of 26 variables in the original data set. And a total of 24 variables in the monthly data set. (What are the variables exactly, categorical or numerical?) (What are the variables about?)</p>
+<p>Quality of the data: -Many N/A values in the monthly data. (Eg: Repurchase flag and zero-balance code-there are only available when the loan age ends.) - Some of the values are coded in a way that we will not know about the exact value of the variable. (Eg: Credit score–below 301:space, above 850:space), poses problems. Some of the variables are unknown too.</p>
+</div>
 <div id="objectives" class="section level1">
 <h1>Objectives</h1>
-<p>See <span class="citation">Lortie (2017)</span> or perhaps <span class="citation">Ihaka and Gentleman (1996)</span></p>
 </div>
 <div id="data" class="section level1">
 <h1>Data</h1>
-<div id="subsection-description" class="section level2">
-<h2>Subsection: Description</h2>
+<div id="description" class="section level2">
+<h2>Description</h2>
+<div id="quality-of-the-data" class="section level3">
+<h3>Quality of the data</h3>
+<p>Many of the variables in the data are coded in ways that may not be optimal for analysis. We therefore plan to recode many of the variable into forms that are easier to handle. Below we propose a scheme for such data manipulations</p>
 </div>
-<div id="subsection-preparation" class="section level2">
-<h2>Subsection: Preparation</h2>
+</div>
+<div id="preparation" class="section level2">
+<h2>Preparation</h2>
+<p>Preparation. What changes? Recoding i.e. mutate, filter, remove NA etc.</p>
 </div>
 </div>
 <div id="study-plan" class="section level1">
@@ -218,17 +228,9 @@ $(document).ready(function () {
 <div id="referenecs" class="section level1">
 <h1>Referenecs</h1>
 <!-- rnb-text-end -->
-<div id="refs" class="references">
-<div id="ref-ihaka1996">
-<p>Ihaka, Ross, and Robert Gentleman. 1996. “R: A Language for Data Analysis and Graphics.” <em>Journal of Computational and Graphical Statistics</em> 5 (3): 299–314.</p>
-</div>
-<div id="ref-lortie2017">
-<p>Lortie, Christopher. 2017. “R for Data Science.” <em>Journal of Statistical Software</em> 77 (1). Foundation for Open Access Statistics: 1–3. <a href="https://doaj.org/article/eadfedd2c6954cd7a01bdeffaa310074" class="uri">https://doaj.org/article/eadfedd2c6954cd7a01bdeffaa310074</a>.</p>
-</div>
-</div>
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUHJvamVjdCBQcm9wb3NhbCIKCmF1dGhvcjoKLSAiQWRkIHlvdXIgbmFtZSIKLSAiQWRkIHlvdXIgbmFtZSIKLSAiQWRkIHlvdXIgbmFtZSIKLSAiRXJpayBTdGVuYmVyZyIKCmFic3RyYWN0OiB8CiAgQW4gYWJzdHJhY3QgaXMgYSBzZWxmLWNvbnRhaW5lZCwgc2hvcnQsIGFuZCBwb3dlcmZ1bCBzdGF0ZW1lbnQgdGhhdCBkZXNjcmliZXMgYSBsYXJnZXIgd29yay4gQ29tcG9uZW50cyB2YXJ5IGFjY29yZGluZyB0byBkaXNjaXBsaW5lLiBBbiBhYnN0cmFjdCBvZiBhIHNvY2lhbCBzY2llbmNlIG9yIHNjaWVudGlmaWMgd29yayBtYXkgY29udGFpbiB0aGUgc2NvcGUsIHB1cnBvc2UsIHJlc3VsdHMsIGFuZCBjb250ZW50cyBvZiB0aGUgd29yay4gQW4gYWJzdHJhY3Qgb2YgYSBodW1hbml0aWVzIHdvcmsgbWF5IGNvbnRhaW4gdGhlIHRoZXNpcywgYmFja2dyb3VuZCwgYW5kIGNvbmNsdXNpb24gb2YgdGhlIGxhcmdlciB3b3JrLiBBbiBhYnN0cmFjdCBpcyBub3QgYSByZXZpZXcsIG5vciBkb2VzIGl0IGV2YWx1YXRlIHRoZSB3b3JrIGJlaW5nIGFic3RyYWN0ZWQuICBzCgpiaWJsaW9ncmFwaHk6IGJpYmxpb2dyYXBoeS5iaWIKCm91dHB1dDoKICBwZGZfZG9jdW1lbnQ6IGRlZmF1bHQKICBodG1sX25vdGVib29rOiBkZWZhdWx0Ci0tLQoKYGBge3IsIGVjaG89RkFMU0V9Cm9wdGlvbnMoY2l0ci51c2VfYmV0dGVyYmlibGF0ZXggPSBGQUxTRSkKYGBgCgoKIyBPYmplY3RpdmVzCgpTZWUgQGxvcnRpZTIwMTcgb3IgcGVyaGFwcyBAaWhha2ExOTk2CgojIERhdGEKCiMjIFN1YnNlY3Rpb246IERlc2NyaXB0aW9uCgojIyBTdWJzZWN0aW9uOiBQcmVwYXJhdGlvbgoKIyBTdHVkeSBQbGFuCgojIFJlZmVyZW5lY3MKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUHJvamVjdCBQcm9wb3NhbCIKCmF1dGhvcjoKLSAiRXJpayBTdGVuYmVyZyAgMzAzNTQyODcyMCIKLSAiSHVhbmcgWmFubWluZyAgMzAzNTE4MjA4MSIKLSAiV29uZyBLd2FuIFlpICAgMzAzNTUwMzE5MiIKLSAiV29uZyBZaWNrIEx1biAgMzAzNTI4MTQwNyIKCgphYnN0cmFjdDogfAogIEFuIGFic3RyYWN0IGlzIGEgc2VsZi1jb250YWluZWQsIHNob3J0LCBhbmQgcG93ZXJmdWwgc3RhdGVtZW50IHRoYXQgZGVzY3JpYmVzIGEgbGFyZ2VyIHdvcmsuIENvbXBvbmVudHMgdmFyeSBhY2NvcmRpbmcgdG8gZGlzY2lwbGluZS4gQW4gYWJzdHJhY3Qgb2YgYSBzb2NpYWwgc2NpZW5jZSBvciBzY2llbnRpZmljIHdvcmsgbWF5IGNvbnRhaW4gdGhlIHNjb3BlLCBwdXJwb3NlLCByZXN1bHRzLCBhbmQgY29udGVudHMgb2YgdGhlIHdvcmsuIEFuIGFic3RyYWN0IG9mIGEgaHVtYW5pdGllcyB3b3JrIG1heSBjb250YWluIHRoZSB0aGVzaXMsIGJhY2tncm91bmQsIGFuZCBjb25jbHVzaW9uIG9mIHRoZSBsYXJnZXIgd29yay4gQW4gYWJzdHJhY3QgaXMgbm90IGEgcmV2aWV3LCBub3IgZG9lcyBpdCBldmFsdWF0ZSB0aGUgd29yayBiZWluZyBhYnN0cmFjdGVkLiAgcwoKYmlibGlvZ3JhcGh5OiBiaWJsaW9ncmFwaHkuYmliCgpvdXRwdXQ6CiAgcGRmX2RvY3VtZW50OiBkZWZhdWx0CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdAotLS0KCmBgYHtyLCBlY2hvPUZBTFNFfQpvcHRpb25zKGNpdHIudXNlX2JldHRlcmJpYmxhdGV4ID0gRkFMU0UpCmBgYAoKIyB3aGF0IHdlIG5lZWQgdG8gZG86CkRlc2NyaXB0aW9uIG9mIGRhdGEgYW5kIHByZWxpbWluYXJ5IGRhdGEgcHJlcGFyYXRpb246ClNvdXJjZSBvZiBkYXRhOiBGcmVkZGllIE1hYywgVGhlIEZlZGVyYWwgSG9tZSBMb2FuIE1vcnRhZ2UgQ29ycC4gKEZITE1DKS4gQSBnb3Zlcm5tZW50IHNwb25zb3JlZCBjb3Jwb3JhdGlvbiB0aGF0IGJ1eXMgbW9ydGFnZXMgYW5kIHBhY2thZ2VzIHRoZW0gaW50byBtb3J0YWdlLWJhY2tlZCBzZWN1cml0aWVzLiAoSG93IHRoZXkgY29sbGVjdCB0aGUgZGF0YT8pIChXaGF0IGlzIHRoZSBkYXRhIGFib3V0PykKCkRlc2NyaXB0aW9uIG9mIG1ham9yIGF0dHJpYnV0ZXMgKHZhcmlhYmxlcyk6IFRvdGFsIG9mIDI2IHZhcmlhYmxlcyBpbiB0aGUgb3JpZ2luYWwgZGF0YSBzZXQuIEFuZCBhIHRvdGFsIG9mIDI0IHZhcmlhYmxlcyBpbiB0aGUgbW9udGhseSBkYXRhIHNldC4gCihXaGF0IGFyZSB0aGUgdmFyaWFibGVzIGV4YWN0bHksIGNhdGVnb3JpY2FsIG9yIG51bWVyaWNhbD8pCihXaGF0IGFyZSB0aGUgdmFyaWFibGVzIGFib3V0PykKClF1YWxpdHkgb2YgdGhlIGRhdGE6IAotTWFueSBOL0EgdmFsdWVzIGluIHRoZSBtb250aGx5IGRhdGEuIChFZzogUmVwdXJjaGFzZSBmbGFnIGFuZCB6ZXJvLWJhbGFuY2UgY29kZS10aGVyZSBhcmUgb25seSBhdmFpbGFibGUgd2hlbiB0aGUgbG9hbiBhZ2UgZW5kcy4pCi0gU29tZSBvZiB0aGUgdmFsdWVzIGFyZSBjb2RlZCBpbiBhIHdheSB0aGF0IHdlIHdpbGwgbm90IGtub3cgYWJvdXQgdGhlIGV4YWN0IHZhbHVlIG9mIHRoZSB2YXJpYWJsZS4gKEVnOiBDcmVkaXQgc2NvcmUtLWJlbG93IDMwMTpzcGFjZSwgYWJvdmUgODUwOnNwYWNlKSwgcG9zZXMgcHJvYmxlbXMuIFNvbWUgb2YgdGhlIHZhcmlhYmxlcyBhcmUgdW5rbm93biB0b28uIAoKCiMgT2JqZWN0aXZlcwoKCiMgRGF0YQoKCiMjIERlc2NyaXB0aW9uCgojIyMgUXVhbGl0eSBvZiB0aGUgZGF0YQpNYW55IG9mIHRoZSB2YXJpYWJsZXMgaW4gdGhlIGRhdGEgYXJlIGNvZGVkIGluIHdheXMgdGhhdCBtYXkgbm90IGJlIG9wdGltYWwgZm9yIGFuYWx5c2lzLiBXZSB0aGVyZWZvcmUgcGxhbiB0byByZWNvZGUgbWFueSBvZiB0aGUgdmFyaWFibGUgaW50byBmb3JtcyB0aGF0IGFyZSBlYXNpZXIgdG8gaGFuZGxlLiBCZWxvdyB3ZSBwcm9wb3NlIGEgc2NoZW1lIGZvciBzdWNoIGRhdGEgbWFuaXB1bGF0aW9ucwoKCgoKIyMgUHJlcGFyYXRpb24KUHJlcGFyYXRpb24uIFdoYXQgY2hhbmdlcz8gUmVjb2RpbmcgaS5lLiBtdXRhdGUsIGZpbHRlciwgcmVtb3ZlIE5BIGV0Yy4KCiMgU3R1ZHkgUGxhbgoKIyBSZWZlcmVuZWNzCgo=</div>
 
 
 
